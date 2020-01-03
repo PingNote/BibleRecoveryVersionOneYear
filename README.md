@@ -9,7 +9,12 @@ https://t.me/s/BibleRecoveryVersionOneYear
 * 讀經進度紀錄
 https://forms.gle/TwRU5pCWPR1o3zYm9
 
-## LINE@ 現有功能研究
+## 於 Telegram 上提供 LINE@ 所沒有的新功能
+### 讀經紀錄
+1. 於 Telegram 頻道內使用 VoteBot ( [@vote](https://t.me/vote) )
+2. 使用 Google 表單 https://forms.gle/TwRU5pCWPR1o3zYm9
+
+## LINE@ 既有功能研究
 
 ### 各年的每日進度表
 * 2016 年
@@ -47,8 +52,3 @@ https://translate.google.com/translate?sl=zh-CN&tl=zh-TW&u=http://bible365.today
 
 ### 縮短址
 * 縮短址服務使用 https://bitly.com
-
-## 於 Telegram 上提供 LINE@ 所沒有的新功能
-### 讀經紀錄
-1. 於 Telegram 頻道內使用 VoteBot ( [@vote](https://t.me/vote) )
-2. 使用 Google 表單 https://forms.gle/TwRU5pCWPR1o3zYm9
