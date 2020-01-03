@@ -9,7 +9,7 @@ https://t.me/s/BibleRecoveryVersionOneYear
 * 讀經進度紀錄
 https://forms.gle/TwRU5pCWPR1o3zYm9
 
-## LINE@ 現有功能研究紀錄
+## LINE@ 現有功能研究
 
 ### 各年的每日進度表
 * 2016 年
