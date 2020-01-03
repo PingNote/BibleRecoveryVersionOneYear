@@ -42,7 +42,7 @@ https://t.me/s/BibleRecoveryVersionOneYear
 	http://bible365.today/oneyear/2018.html
 	* 2019 年
 	http://bible365.today/oneyear/2019.html
-	* (沒有 2020 年)
+	* 2020 年 (沒有)
 
 ### 每日進度網址格式
 
