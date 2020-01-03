@@ -6,8 +6,6 @@
 https://t.me/BibleRecoveryVersionOneYear
 * 網頁好讀版
 https://t.me/s/BibleRecoveryVersionOneYear
-* 讀經進度紀錄
-https://forms.gle/TwRU5pCWPR1o3zYm9
 
 ## 於 Telegram 上提供 LINE@ 所沒有的新功能
 ### 讀經紀錄
