@@ -17,16 +17,34 @@ https://forms.gle/TwRU5pCWPR1o3zYm9
 ## LINE@ 既有功能研究
 
 ### 各年的每日進度表
-* 2016 年
-http://line.twgbr.org/recoveryversion/oneyear/2016.html
-* 2017 年
-http://line.twgbr.org/recoveryversion/oneyear/2017.html
-* 2018 年
-http://line.twgbr.org/recoveryversion/oneyear/2018.html
-* 2019 年
-http://line.twgbr.org/recoveryversion/oneyear/2019.html
-* 2020 年
-http://line.twgbr.org/recoveryversion/oneyear/2020.html
+
+網頁有兩種
+* line.twgbr.org http://line.twgbr.org/recoveryversion/oneyear/2019.html
+* bible365.today http://bible365.today/oneyear/2019.html
+
+兩種之中未存在差異。
+
+* line.twgbr.org
+	* 2016 年
+	http://line.twgbr.org/recoveryversion/oneyear/2016.html
+	* 2017 年
+	http://line.twgbr.org/recoveryversion/oneyear/2017.html
+	* 2018 年
+	http://line.twgbr.org/recoveryversion/oneyear/2018.html
+	* 2019 年
+	http://line.twgbr.org/recoveryversion/oneyear/2019.html
+	* 2020 年
+	http://line.twgbr.org/recoveryversion/oneyear/2020.html
+* bible365.today
+	* 2016 年
+	http://bible365.today/oneyear/2016.html
+	* 2017 年
+	http://bible365.today/oneyear/2017.html
+	* 2018 年
+	http://bible365.today/oneyear/2018.html
+	* 2019 年
+	http://bible365.today/oneyear/2019.html
+	* (沒有 2020 年)
 
 ### 每日進度網址格式
 
