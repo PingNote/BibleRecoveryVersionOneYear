@@ -1,4 +1,4 @@
-# BibleRecoveryVersionOneYear
+# bible365.today / Bible Recovery Version One Year
 
 讀經一年一遍 Telegram 頻道
 
