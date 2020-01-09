@@ -11,6 +11,9 @@ https://t.me/s/bible365_today
 ### 讀經紀錄
 1. 於 Telegram 頻道內使用 VoteBot ( [@vote](https://t.me/vote) )
 2. 使用 Google 表單 https://forms.gle/TwRU5pCWPR1o3zYm9
+### 經節註解翻譯成繁體中文
+* LINE@ 提供的每日進度網頁是使用 Google 翻譯，但其經節註解依然是簡體中文。
+* Telegram 頻道上提供的每日進度網頁，其經節註解已順利翻譯為繁體中文。
 
 ## LINE@ 既有功能研究
 
