@@ -3,9 +3,9 @@
 讀經一年一遍 Telegram 頻道
 
 * 每日提醒通知功能
-https://t.me/BibleRecoveryVersionOneYear
+https://t.me/bible365_today
 * 網頁好讀版
-https://t.me/s/BibleRecoveryVersionOneYear
+https://t.me/s/bible365_today
 
 ## 於 Telegram 上提供 LINE@ 所沒有的新功能
 ### 讀經紀錄
