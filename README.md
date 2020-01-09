@@ -73,3 +73,4 @@ https://translate.google.com/translate?sl=zh-CN&tl=zh-TW&u=http://bible365.today
 * 網頁爬蟲: HTTrack https://www.httrack.com
 * 下載管理: JDownloader http://jdownloader.org
 * 簡繁轉換: ConvertZZ https://github.com/flier268/ConvertZZ
+* ID3 編輯: Kid3 https://kid3.sourceforge.io
