@@ -68,3 +68,8 @@ https://translate.google.com/translate?sl=zh-CN&tl=zh-TW&u=http://bible365.today
 
 ### 縮短址
 * 縮短址服務使用 https://bitly.com
+
+## 其他輔助工具
+* 網頁爬蟲: HTTrack https://www.httrack.com
+* 下載管理: JDownloader http://jdownloader.org
+* 簡繁轉換: ConvertZZ https://github.com/flier268/ConvertZZ
