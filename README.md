@@ -8,7 +8,7 @@ https://t.me/bible365_today
 https://t.me/s/bible365_today
 
 ## 於 Telegram 上提供 LINE@ 所沒有的新功能
-### 讀經紀錄
+### 讀經進度紀錄
 1. 於 Telegram 頻道內使用 VoteBot ( [@vote](https://t.me/vote) )
 2. 使用 Google 表單 https://forms.gle/TwRU5pCWPR1o3zYm9
 ### 經節註解翻譯成繁體中文
