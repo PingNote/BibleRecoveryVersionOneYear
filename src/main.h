@@ -5,6 +5,8 @@
 #include <iostream>
 #include <cpprest/details/basic_types.h>
 #include <cpprest/http_client.h>
+#include <boost/date_time.hpp>
+#include <boost/date_time/local_time_adjustor.hpp>
 
 #include "config.h"
 
@@ -13,6 +15,9 @@ using namespace web;                        // Common features like URIs.
 using namespace web::http;                  // Common HTTP functionality
 using namespace web::http::client;          // HTTP client features
 using namespace concurrency::streams;       // Asynchronous streams
+using namespace boost;
+using namespace boost::date_time;
+using namespace boost::posix_time;
 
 enum Mode : uint
 {

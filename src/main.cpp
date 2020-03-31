@@ -55,11 +55,14 @@ void modeToday(http_client client, bool disable_notification)
 {
     std::cout << U("[modeToday] disable_notification = ") << disable_notification << std::endl;
 
-    auto now_clock = std::chrono::system_clock::now();
-    auto now_time = std::chrono::system_clock::to_time_t(now_clock);
-    auto now_tm = std::gmtime(&now_time);
+    typedef local_adjustor<ptime, +8, no_dst> timezoneTaipei;
+    ptime now_ptime_utc = posix_time::second_clock::universal_time();
+    ptime now_ptime_taipei = timezoneTaipei::utc_to_local(now_ptime_utc);
 
-    modeYearDay(client, now_tm->tm_year + 1900, now_tm->tm_yday + 1, disable_notification);
+    uint year = now_ptime_taipei.date().year();
+    uint day = now_ptime_taipei.date().day_of_year();
+
+    modeYearDay(client, year, day, disable_notification);
 }
 
 void modeYearDay(http_client client, uint year, uint day, bool disable_notification)
