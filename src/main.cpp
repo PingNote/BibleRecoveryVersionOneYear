@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
         mode = static_cast<Mode>(uintMode);
     }
 
-    bool disable_notification = 0;
+    bool disable_notification = false;
     if (argc > 2)
     {
         std::stringstream str_disable_notification(argv[2]);
