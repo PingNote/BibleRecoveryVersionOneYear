@@ -25,7 +25,9 @@ int main(int argc, char *argv[])
     std::ostringstream urlBaseStream;
     urlBaseStream << urlBase << token;
 
-    http_client client(urlBaseStream.str());
+    http_client_config config;
+    config.set_validate_certificates(false);
+    http_client client(urlBaseStream.str(), config);
 
     switch (mode)
     {
