@@ -19,11 +19,27 @@ using namespace boost;
 using namespace boost::date_time;
 using namespace boost::posix_time;
 
+enum ArgIndex : uint
+{
+    Command = 0,
+    Token = 1,
+    ChatId = 2,
+    Mode = 3,
+    DisableNotification = 4
+};
+
 enum Mode : uint
 {
     Default = 0,
     Today = Default,
     YearDay = 1
+};
+
+enum ExitCode : int
+{
+    Normal = 0,
+    TokenNotFound = -1,
+    ChatIdNotFound = -2
 };
 
 bool isLeapYear(uint year);

@@ -4,19 +4,33 @@ int main(int argc, char *argv[])
 {
     coutArgs(argc, argv);
 
-    Mode mode = Mode::Default;
-    if (argc > 1)
+    if (argc <= ArgIndex::Token)
+    {
+        std::cout << U("Token Not Found") << std::endl;
+        return ExitCode::TokenNotFound;
+    }
+    token = U(argv[ArgIndex::Token]);
+
+    if (argc <= ArgIndex::ChatId)
+    {
+        std::cout << U("Chat ID Not Found") << std::endl;
+        return ExitCode::ChatIdNotFound;
+    }
+    chat_id = U(argv[ArgIndex::ChatId]);
+
+    enum Mode mode = Mode::Default;
+    if (argc > ArgIndex::Mode)
     {
         uint uintMode = 0;
-        std::stringstream strMode(argv[1]);
+        std::stringstream strMode(argv[ArgIndex::Mode]);
         strMode >> uintMode;
-        mode = static_cast<Mode>(uintMode);
+        mode = static_cast<enum Mode>(uintMode);
     }
 
     bool disable_notification = false;
-    if (argc > 2)
+    if (argc > ArgIndex::DisableNotification)
     {
-        std::stringstream str_disable_notification(argv[2]);
+        std::stringstream str_disable_notification(argv[ArgIndex::DisableNotification]);
         str_disable_notification >> disable_notification;
     }
 
@@ -50,7 +64,7 @@ int main(int argc, char *argv[])
             break;
     }
 
-    return 0;
+    return ExitCode::Normal;
 }
 
 void modeToday(http_client client, bool disable_notification)
