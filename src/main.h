@@ -25,7 +25,11 @@ enum ArgIndex : uint
     Token = 1,
     ChatId = 2,
     Mode = 3,
-    DisableNotification = 4
+    DisableNotification = 4,
+
+    /// For Mode::YearDay
+    Year = 5,
+    Day = 6
 };
 
 enum Mode : uint

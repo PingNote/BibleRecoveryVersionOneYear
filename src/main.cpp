@@ -51,11 +51,11 @@ int main(int argc, char *argv[])
             break;
         case Mode::YearDay:
         {
-            std::stringstream strYear(argv[3]);
+            std::stringstream strYear(argv[ArgIndex::Year]);
             uint uintYear;
             strYear >> uintYear;
 
-            std::stringstream strDay(argv[4]);
+            std::stringstream strDay(argv[ArgIndex::Day]);
             uint uintDay;
             strDay >> uintDay;
 
