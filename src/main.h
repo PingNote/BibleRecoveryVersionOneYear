@@ -27,9 +27,10 @@ enum ArgIndex : uint
     Mode = 3,
     DisableNotification = 4,
 
-    /// For Mode::YearDay
+    #pragma region Mode.YearDay
     Year = 5,
     Day = 6
+    #pragma endregion // Mode.YearDay
 };
 
 enum Mode : uint
@@ -55,6 +56,7 @@ void coutHttpResponse(http_response response);
 
 http_response sendAudio(http_client client, bool isNewTestament, uint year, uint day, bool disable_notification);
 http_response sendPoll(http_client client, uint day, bool disable_notification);
+http_response sendMessage(http_client client, uint year, bool disable_notification);
 
 void modeYearDay(http_client client, uint year, uint day, bool disable_notification);
 void modeToday(http_client client, bool disable_notification);

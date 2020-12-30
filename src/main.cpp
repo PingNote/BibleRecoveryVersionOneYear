@@ -91,17 +91,27 @@ void modeYearDay(http_client client, uint year, uint day, bool disable_notificat
 
     http_response response;
 
-    response = sendAudio(client, true, year, day, disable_notification);
-    coutHttpResponse(response);
-    std::cout << std::endl;
+    if(364 >= day)
+    {
+        response = sendAudio(client, true, year, day, disable_notification);
+        coutHttpResponse(response);
+        std::cout << std::endl;
 
-    response = sendAudio(client, false, year, day, disable_notification);
-    coutHttpResponse(response);
-    std::cout << std::endl;
+        response = sendAudio(client, false, year, day, disable_notification);
+        coutHttpResponse(response);
+        std::cout << std::endl;
 
-    response = sendPoll(client, day, disable_notification);
-    coutHttpResponse(response);
-    std::cout << std::endl;
+        response = sendPoll(client, day, disable_notification);
+        coutHttpResponse(response);
+        std::cout << std::endl;
+    }
+
+    if (364 <= day)
+    {
+        response = sendMessage(client, year, disable_notification);
+        coutHttpResponse(response);
+        std::cout << std::endl;
+    }
 }
 
 http_response sendAudio(http_client client, bool isNewTestament, uint year, uint day, bool disable_notification)
@@ -177,6 +187,30 @@ http_response sendPoll(http_client client, uint day, bool disable_notification)
     requestBody[U("question")] = json::value::string(questionStream.str());
     requestBody[U("options")] = options;
     requestBody[U("is_anonymous")] = json::value::boolean(true);
+    requestBody[U("disable_notification")] = json::value::boolean(disable_notification);
+
+    std::cout << U("Request: ") << requestBody.serialize() << std::endl;
+
+    uri_builder builder(methodName);
+    http_response response = client.request(methods::POST, builder.to_string(), requestBody).get();
+
+    return response;
+}
+
+http_response sendMessage(http_client client, uint year, bool disable_notification)
+{
+    std::string methodName = U("sendMessage");
+
+    std::cout << U("[") << methodName << U("]") << std::endl;
+
+    std::ostringstream textStream;
+    textStream
+            << U("恭禧您在 ") << year << U(" 年")
+            << U("完成了讀經一年一遍!!");
+
+    json::value requestBody = json::value::object();
+    requestBody[U("chat_id")] = json::value::string(chat_id);
+    requestBody[U("text")] = json::value::string(textStream.str());
     requestBody[U("disable_notification")] = json::value::boolean(disable_notification);
 
     std::cout << U("Request: ") << requestBody.serialize() << std::endl;
